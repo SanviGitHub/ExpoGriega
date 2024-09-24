@@ -1,0 +1,111 @@
+/* Incluir Google Fonts en tu HTML */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; /* Fuente moderna */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, rgb(19, 24, 98), rgb(67, 31, 102)); /* Degradado azul marino y morado marino */
+}
+
+.container {
+    text-align: center; /* Centrado del texto */
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente */
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+    margin: 20px;
+}
+
+/* Añadir sombra al cuadro de "¿Qué deseas aprender?" */
+.title {
+    font-size: 2.5rem; /* Tamaño mayor */
+    color: #ffffff; /* Color blanco */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Sombra en el texto */
+    margin-bottom: 20px;
+    padding: 10px; /* Espaciado interno */
+    border: 2px solid rgba(0, 0, 0, 0.7); /* Borde negro para resaltado */
+    border-radius: 20px; /* Bordes redondeados */
+    background-color: rgba(0, 0, 0, 0.3); /* Fondo semi-transparente para el título */
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column; /* Botones en columna */
+    align-items: center; /* Centrar botones */
+    gap: 15px; /* Espacio entre botones */
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 30px; /* Tamaño mayor para botones */
+    background-color: #3498db; /* Azul */
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem; /* Tamaño de texto */
+    border-radius: 30px; /* Bordes redondeados */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra en los botones */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background-color: #2980b9; /* Azul más oscuro al pasar el mouse */
+    transform: translateY(-2px); /* Efecto de elevación */
+}
+
+/* Créditos modernos */
+.credits {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente negro */
+    padding: 15px;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1rem; /* Tamaño reducido para móviles */
+    color: #ffffff; /* Color blanco */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Sombras elegantes */
+}
+
+.credits h2 {
+    font-size: 1.5rem; /* Tamaño ajustado */
+    color: #ffffff; /* Color blanco */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Sombra en el texto */
+    margin-bottom: 10px;
+}
+
+.credits p {
+    margin: 8px 0;
+}
+
+/* Estilos para pantallas grandes (PC) */
+@media (min-width: 768px) {
+    .container {
+        padding: 40px;
+        margin: 30px 50px; /* Mayor margen en pantallas grandes */
+    }
+
+    .title {
+        font-size: 3rem; /* Tamaño mayor para PC */
+    }
+
+    .button {
+        padding: 15px 40px; /* Ajuste de tamaño de botones */
+        font-size: 1.5rem;
+    }
+
+    .credits {
+        font-size: 1.2rem;
+    }
+
+    .credits h2 {
+        font-size: 2rem; /* Título más grande en PC */
+    }
+}

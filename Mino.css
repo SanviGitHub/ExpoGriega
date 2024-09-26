@@ -1,67 +1,106 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
+/* Estilos generales */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif; /* Fuente moderna */
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(135deg, rgb(19, 24, 98), rgb(67, 31, 102)); /* Degradado azul marino y morado marino */
+    background: linear-gradient(135deg, rgb(19, 24, 98), rgb(67, 31, 102)); /* Fondo con degradado */
+    color: white;
 }
 
+/* Contenedor principal */
 .container {
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente */
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 30px;
     border-radius: 20px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 800px;
     margin: 20px;
 }
 
+/* Título */
 .title {
-    font-size: 2.5rem; /* Tamaño mayor */
-    color: #2d2d2d; /* Color blanco */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Sombra en el texto */
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     margin-bottom: 20px;
 }
 
-.description {
-    font-size: 1.2rem;
-    color: #333; /* Color para el texto */
+/* Imagen del Minotauro */
+.image-container {
     margin: 20px 0;
+    text-align: center;
 }
 
+.minotauro-image {
+    width: 200px; /* Ajuste del tamaño más pequeño */
+    height: auto;
+    border-radius: 50%; /* Bordes completamente redondeados */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Sombra en la imagen */
+    transition: transform 0.3s ease; /* Transición suave en hover */
+}
+
+.minotauro-image:hover {
+    transform: scale(1.05); /* Efecto de agrandamiento en hover */
+}
+
+/* Descripción */
+.description {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    color: black;
+}
+
+/* Botón de regresar */
 .back-button {
     padding: 10px 20px;
-    background-color: #3498db; /* Azul */
+    background-color: #3498db;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 30px;
     cursor: pointer;
+    font-size: 1.2rem;
     transition: background-color 0.3s, transform 0.3s;
 }
 
 .back-button:hover {
-    background-color: #2980b9; /* Azul más oscuro al pasar el mouse */
-    transform: scale(1.05); /* Efecto de crecimiento */
+    background-color: #2980b9;
+    transform: translateY(-2px);
 }
 
+/* Créditos */
 .credits {
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente negro */
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 15px;
-    margin: 20px 0;
+    margin-top: 30px;
     border-radius: 10px;
-    color: #ffffff; /* Color blanco */
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Sombras elegantes */
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .credits h2 {
-    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.credits p {
+    margin: 10px 0;
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 768px) {
+    .minotauro-image {
+        width: 300px; /* Ajuste del tamaño para pantallas grandes */
+    }
+
+    .title {
+        font-size: 3rem;
+    }
 }

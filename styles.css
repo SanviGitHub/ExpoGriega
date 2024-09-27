@@ -117,3 +117,22 @@ body {
         font-size: 1rem;
     }
 }
+
+/* Botón "Ver video" con estilo diferente */
+.video-button {
+    display: inline-block;
+    margin-bottom: 1px; /* Espacio entre el botón y el título */
+    padding: 15px 40px;
+    background-color: #2ecc71; /* Verde diferente */
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 30px; /* Bordes redondeados */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.video-button:hover {
+    background-color: #27ae60; /* Verde más oscuro al pasar el mouse */
+    transform: translateY(-2px); /* Efecto de elevación */
+}
